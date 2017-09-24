@@ -1,0 +1,37 @@
+﻿@model IEnumerable<MVCDemo.Models.Employee>
+
+@*<div class="display-lable">
+    @Html.DisplayName("ID")
+</div>
+<div class="dispay-field">
+    @Model.ID
+</div>
+<div class="display-lable">
+    @Html.DisplayName("FirstName")
+</div>
+<div class="dispay-field">
+    @Model.FirstName
+</div>
+<div class="display-lable">
+    @Html.DisplayName("LastName")
+</div>
+<div class="dispay-field">
+    @Model.LastName
+</div>
+<div class="display-lable">
+    @Html.DisplayName("City")
+</div>
+<div class="dispay-field">
+    @Model.City
+</div>*@
+
+<div>
+    @foreach (var employee in Model) {
+        <p>@employee.ID
+    @employee.FirstName
+    @employee.LastName
+    @employee.City
+
+        </p>
+    }
+</div>
